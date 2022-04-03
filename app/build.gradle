@@ -5,20 +5,7 @@ plugins {
 
 android {
     compileSdk 32
-    signingConfigs {
-        debug {
-            storeFile file('C:\\Keystore\\VegasLive.jks')
-            storePassword 'VegasLive2022@!'
-            keyAlias 'key0'
-            keyPassword 'VegasLive2022@!'
-        }
-        release {
-            storeFile file('C:\\Keystore\\VegasLive.jks')
-            storePassword 'VegasLive2022@!'
-            keyAlias "key0"
-            keyPassword 'VegasLive2022@!'
-        }
-    }
+
     defaultConfig {
         applicationId "com.liveapp.casvegas"
         minSdk 24
@@ -26,7 +13,6 @@ android {
         versionCode 1
         versionName "1.88"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.release
     }
 
     buildTypes {
